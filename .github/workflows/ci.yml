@@ -4,12 +4,16 @@ on: [push]
 
 jobs:
 
-build:
+ build:
 
-runs-on: ubuntu
+  runs-on: ubuntu
 
-steps:
+  steps:
 
-- name: Ver la hora
+  - name: Ver la hora
 
-run: date
+  run: date
+
+  - name: Esperar 3 segundos
+
+  run: sleep 3
